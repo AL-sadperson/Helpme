@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interdimensional Services</title>
+    <style>
+        /* إعدادات الخطوط والخلفية الأساسية */
+        body {
+            background-color: #000;
+            font-family: 'Tahoma', sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* حاوية المتصفح القديم */
+        .browser-window {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #c0c0c0; /* لون الويندوز القديم */
+            border: 2px solid #fff;
+            border-right-color: #000;
+            border-bottom-color: #000;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+
+        /* شريط العنوان العلوي */
+        .title-bar {
+            background: linear-gradient(90deg, #000080, #1084d0);
+            color: white;
+            padding: 3px 5px;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* القوائم العلوية (File, Edit, etc) */
+        .menu-bar {
+            padding: 2px 10px;
+            border-bottom: 1px solid #808080;
+            font-size: 13px;
+        }
+        
+        .toolbar {
+            padding: 5px;
+            border-bottom: 2px solid #fff;
+            border-bottom-color: #808080;
+            display: flex;
+            gap: 15px;
+            font-size: 12px;
+        }
+
+        /* الحاوية الرئيسية للمحتوى */
+        .main-content {
+            background-image: url('stars-background.jpg'); /* ستحتاج لصورة فضاء هنا */
+            background-color: #001122;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: 200px 1fr 250px;
+            gap: 15px;
+            height: 700px; /* ارتفاع تقريبي */
+            position: relative;
+        }
+
+        /* تصميم النوافذ الداخلية (القوائم والتحديثات) */
+        .inner-window {
+            background-color: #c0c0c0;
+            border: 2px solid #fff;
+            border-right-color: #000;
+            border-bottom-color: #000;
+            padding: 2px;
+        }
+
+        .inner-title {
+            background-color: #000080;
+            color: white;
+            padding: 2px 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .inner-body {
+            background-color: #fff;
+            padding: 10px;
+            font-size: 12px;
+            border: 2px inset #fff;
+        }
+
+        /* قائمة التصفح الجانبية */
+        .sidebar-menu li {
+            list-style: none;
+            padding: 5px;
+            margin-bottom: 5px;
+            background-color: #000080;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* منطقة الكولاج الأوسط */
+        .collage-area {
+            position: relative;
+            background-color: #e8dcc4; /* لون الورق القديم */
+            border: 1px solid #333;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace; /* خط الآلة الكاتبة */
+        }
+
+        /* شريط الأخبار المتحرك السفلي */
+        .marquee-container {
+            background-color: #000080;
+            color: white;
+            padding: 5px;
+            font-size: 14px;
+            border: 2px inset #fff;
+            margin-top: 10px;
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="browser-window">
+    <div class="title-bar">
+        <span>Interdimensional Services - Microsoft Internet Explorer</span>
+        <span>_ [ ] X</span>
+    </div>
+    <div class="menu-bar">
+        File &nbsp; Edit &nbsp; View &nbsp; Go &nbsp; Favorites &nbsp; Help
+    </div>
+    <div class="toolbar">
+        <span>Back</span> <span>Forward</span> <span>Stop</span> <span>Refresh</span> <span>Home</span>
+    </div>
+
+    <div class="main-content">
+        <!-- القائمة الجانبية اليسرى -->
+        <div class="left-sidebar">
+            <div class="inner-window">
+                <div class="inner-title">Main Menu</div>
+                <div class="inner-body" style="background: #c0c0c0;">
+                    <ul class="sidebar-menu" style="padding:0; margin:0;">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Our Services</li>
+                        <li>Careers</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- المحتوى الأوسط (مكان الكولاج) -->
+        <div class="center-content">
+            <div class="collage-area">
+                <h1>w e l c o m e *</h1>
+                <p><strong>Interdimensional Services</strong><br>
+                The Interdimensional Services (IS) is a federal agency dedicated to maintaining the stability, regulation, and protection of all known dimensions...</p>
+                <!-- هنا يجب وضع الصور المقصوصة (الأيدي، المباني) باستخدام CSS absolute positioning -->
+            </div>
+        </div>
+
+        <!-- القائمة الجانبية اليمنى -->
+        <div class="right-sidebar">
+            <div class="inner-window">
+                <div class="inner-title">Latest Updates</div>
+                <div class="inner-body">
+                    <p><strong>Oct 26, 1986</strong><br>New Frontiers Initiative Launches</p>
+                    <p><strong>Oct 19, 1986</strong><br>Employee Wellness Updates</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- شريط التنبيهات المتحرك -->
+        <div class="marquee-container">
+            <marquee>&gt;&gt; PUBLIC SERVICE ANNOUNCEMENT: Report any dimensional anomalies immediately. | Together we keep the balance.</marquee>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
